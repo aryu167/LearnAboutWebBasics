@@ -1,83 +1,123 @@
-body
-{
-    font-family: Arial, sans-serif;
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-header
-{
+/* Header */
+header {
     background-color: #121212;
     color: white;
     text-align: center;
-    padding: 25px;
-    filter: drop-shadow(0 0 0.75rem black);
+    padding: 30px 15px;
+    filter: drop-shadow(0 0 1rem black);
 }
 
-section.about
-{
-    padding: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+header p a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+section.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
     background-color: #4285F4;
+    gap: 40px;
     filter: drop-shadow(0 0 0.75rem black);
-    display: flex;
 }
 
-section.about p
-{
-    font-weight: bold;
+.aboutme {
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-div.aboutme
-{
-    margin: 0 auto;
-    width: 50%;
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-radius: 20px;
+.aboutme h2 {
+    font-weight: 600;
 }
 
-.mypicture
-{
-    border: solid #ffffff;
-    padding: 15px;
-    border-radius: 20px;
-    margin-right: 100px;
+.mypicture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-h2.projects
-{
-    padding-top: 15px;
-    padding-left: 15px;
+/* Projects Section */
+h2.projects-title {
+    text-align: center;
     font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-section.projects
-{
-    padding: 15px;
-    padding-top: 0px;
+section.projects {
     display: flex;
-}
-
-section.projects div
-{
-    border: solid;
-    border-radius: 5px;
+    justify-content: center;
+    gap: 20px;
     padding: 15px;
-    margin-right: 15px;
 }
 
-footer.findme
-{
-    text-align: center;
-    padding: 25px;
+section.projects div {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button
-{
-    color: white;
-    padding: 16px 32px;
+section.projects div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer.findme {
     text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 30px;
     background-color: #34a853;
+    color: white;
+}
+
+footer.findme h2 {
+    margin-bottom: 15px;
+}
+
+footer.findme button {
+    background-color: #4285F4;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer.findme button:hover {
+    background-color: #2a56c6;
 }
